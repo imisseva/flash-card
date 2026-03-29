@@ -1,0 +1,21 @@
+# Bỏ qua file hệ thống
+.DS_Store
+Thumbs.db
+
+# Python & Django rác
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+
+# Database (NÊN BỎ QUA để tránh xung đột khi làm nhóm)
+# Mỗi thành viên sẽ tự có 1 file db riêng trên máy họ
+*.sqlite3
+
+# Docker log/data (Không đẩy dữ liệu tạm của docker lên)
+mosquitto/data/*
+mosquitto/log/*
+
+# Biến môi trường (Chứa mật khẩu, key bí mật - sau này sẽ dùng)
+.env
